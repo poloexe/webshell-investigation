@@ -17,10 +17,13 @@
 <details>
 <summary><strong>Identifying the Scanning IP</strong></summary>
 
-- **Approach**: Opened the PCAP in Wireshark, navigated to `Statistics > Conversations` and then switched to the TCP tab to isolate TCP packets.
+- **Approach**: Opened the PCAP in Wireshark, navigated to **Statistics > Conversations** and then switched to the TCP tab to isolate TCP packets.
 - **Finding**: Noticed the source IP `10.251.96.4` sent SYN packets to numerous ports on `10.251.96.5`, confirming it as the scanner. By sorting by the victim's port scanned ascending or descending we can get the lowest and highest port scanned
 
-![convos](./screenshots/statistics-conversations.png)
+![convos](./screenshots/follow-stat-convo.png)
+![convos](./screenshots/tcp-convo-ascending.png)
+![convos](./screenshots/tcp-convo-descending.png)
+
 
 </details>
 
