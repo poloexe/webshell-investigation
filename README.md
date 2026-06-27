@@ -122,10 +122,12 @@
 
 ## Key Takeaways
 
-- **User-Agent headers** are helpful but can be spoofed, always verify tools by their payload patterns.
-- **TCP stream reassembly** is essential for extracting uploaded files and command payloads.
-- Attackers follow a predictable kill chain: scanning → web reconnaissance → exploitation → shell access.
-- A **reverse shell** bypasses inbound firewall rules by using an outbound connection.
+- **User-Agent headers** are helpful but can be spoofed, always verify tools by examining payload patterns and network behavior. [See sqlmap example](./screenshots/follow-http.png)
+- **Error-based SQL injection** detection relies on analyzing response content not just HTTP status codes, different payloads produce different server responses. [See error response](./screenshots/sql-response.png)
+- **Information disclosure vulnerabilities** (exposed database credentials in error messages) are often gateway exploits that lead to deeper compromise. [See exposed credentials](./screenshots/sql-response.png)
+- **TCP stream reassembly** is essential for extracting uploaded files, viewing source code, and analyzing malicious payloads. [See TCP stream](./screenshots/follow-tcp.png)
+- Attackers follow a predictable kill chain: scanning → web reconnaissance → SQL exploitation → file upload → command execution → reverse shell.
+- A **reverse shell** bypasses inbound firewall rules by using outbound connections initiated from the victim. [See Python code](./screenshots/python-code.png)
 
 ## Files Included
 
