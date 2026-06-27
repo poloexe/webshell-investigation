@@ -131,12 +131,8 @@
 
 ## Files Included
 
-- `BTLOPortScan.pcap`: original packet capture (Could be malicious, proceed with caution)
+- `BTLOPortScan.pcap`: original capture file.
 - `screenshots/`: screenshots from Wireshark.
-
-
-*This report was created for educational purposes as part of a BTLO challenge.*
-
 
 <br> 
 <div align="center"><strong>🤍 Baruch (and few cups of coffee ☕)</strong></div>
