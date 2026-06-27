@@ -5,7 +5,7 @@
 **Challenge Link:** [BTLO](https://blueteamlabs.online/home/challenge/network-analysis-web-shell-d4d3a2821b)
 
 
-## Scenario Overview
+## Overview
 
 > An alert was received on an SIEM for ‘Local to Local Port Scanning’ where an internal private IP began scanning another internal system.
 
