@@ -129,7 +129,7 @@
 - `screenshots/`: screenshots from Wireshark.
 
 
-*This report was created for educational purposes as part of a Blue Team Level 1 (BTLO) challenge.*
+*This report was created for educational purposes as part of a BTLO challenge.*
 
 
 <br> 
