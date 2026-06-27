@@ -12,13 +12,13 @@
 **Objective:** Investigate the PCAP to determine if the activity is malicious or not.
 
 
-## Methodology & Investigation Steps
+## Investigation Steps
 
 <details>
 <summary><strong>Identifying the Scanning IP</strong></summary>
 
 - **Approach**: Opened the PCAP in Wireshark, navigated to **Statistics > Conversations** and then switched to the TCP tab to isolate TCP packets.
-- **Finding**: Noticed the source IP `10.251.96.4` sent SYN packets to numerous ports on `10.251.96.5`, confirming it as the scanner. By sorting by the victim's port scanned ascending or descending we can get the lowest and highest port scanned
+- **Finding**: Noticed the source IP `10.251.96.4` sent SYN packets to numerous ports on `10.251.96.5`, confirming it as the scanner. By sorting by the victim's port scanned ascending or descending we can get the lowest and highest port scanned which were port `1-1024`
 
 ![convos](./screenshots/follow-stat-convo.png)
 ![convos](./screenshots/tcp-convo-ascending.png)
@@ -130,3 +130,7 @@
 
 
 *This report was created for educational purposes as part of a Blue Team Level 1 (BTLO) challenge.*
+
+
+<br> 
+<div align="center"><strong>🤍 Baruch (and few cups of coffee ☕)</strong></div>
